@@ -1,0 +1,140 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    color: white;
+    padding: 20px;
+}
+
+/* TITULOS */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* CONTAINERS */
+.container {
+    width: 100%;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* BOTÕES (estilo Brawl Stars) */
+button {
+    width: 160px;
+    height: 100px;
+    background: linear-gradient(145deg, #ffcc00, #ff9900);
+    border: 4px solid black;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 3px 3px 0px #000;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #ffd633, #ffaa00);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 0px #000;
+}
+
+/* SELECT E INPUT */
+select, input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* LAYOUT SALAO */
+.container-flex {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.form-area {
+    width: 30%;
+    background-color: #2f2f4f;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.table-area {
+    width: 70%;
+    background-color: #2f2f4f;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #44446a;
+}
+
+/* FORMULÁRIOS */
+form {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #00ffcc;
+    text-shadow: 1px 1px 0px black;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .form-area, .table-area {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
